@@ -27,16 +27,21 @@ class Main {
         scanner.nextLine();
 
         switch (choice) {
-          case 1:
+            case 1:
             System.out.print("Podaj imię studenta: ");
             String name = scanner.nextLine();
+            System.out.print("Podaj nazwisko studenta: ");
+            String lastName = scanner.nextLine();
             System.out.print("Podaj wiek studenta: ");
             int age = scanner.nextInt();
             scanner.nextLine();
+            System.out.print("Podaj datę urodzenia (np. 15-05-2002): ");
+            String birthDate = scanner.nextLine();
 
-            s.addStudent(new Student(name, age));
+            s.addStudent(new Student(name, lastName, age, birthDate));
             System.out.println("Dodano studenta do bazy.");
             break;
+            
 
           case 2:
             var students = s.getStudents();
