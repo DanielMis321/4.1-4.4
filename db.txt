@@ -7,3 +7,4 @@ Janusz 40
 Krzysztof 20
 Janusz 40
 daniel  24
+Daniel 24
